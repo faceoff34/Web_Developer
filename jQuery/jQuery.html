@@ -6,19 +6,8 @@
     <script type: "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <style type="text/css">
-      #circle {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background-color: green;
-        margin: 10px;
-      }
-
-      .square {
-        width: 150px;
-        height: 150px;
-        background-color: red;
-        margin: 10px;
+      #fadeinText {
+        display: none;
       }
 
 
@@ -28,18 +17,20 @@
 
   <body>
 
-    <div id="circle"></div>
+    <p id="fadeoutText">This is some text that will fade!</p>
 
-    <div class="square"></div>
-
-    <div class="square"></div>
+    <button id="toggle">Toggle</button>
 
     <script type:"text/javascript">
-      $("#circle").click(function(){
-        alert($("#circle").css("width"));
-      });
+      $(#toggle).click(function(){
 
+        $(#fadeoutText).css("display" == "none") {
+          $(#fadeoutText).fadeIn();
 
+        } else {
+          $(#fadeoutText).fadeOut();
+        }
+      })
 
     </script>
 
